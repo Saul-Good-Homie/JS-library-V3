@@ -1,0 +1,91 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Book Library JS-Practice</title>
+    <meta name="description" content="Books" />
+    <!-- Required meta tags -->
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/12500c009c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Fonts -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
+    </style>
+
+    <!-- Custom styles for this site -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="logo">
+        <h1>Book Library</h1>
+      </div>
+      <div class="add-new">
+        <a href="#" class="new-book" onclick="openForm()">Add New</a>
+      </div>
+    </header>
+
+    <section id="book-shelf">
+      <!-- <div class="book-card">
+        <div class="top-container">
+          <div class="book-title">The Hobbit</div>
+          <div class="book-author">By: JR Tolkein</div>
+        </div>
+        <div class="bottom-container">
+          <div class="book-pages">493 pages</div>
+          <div class="book-footer">
+            <button
+              id="delete-button"
+              class="delete-button"
+              onclick="deleteBook(event)"
+            >
+              Delete
+            </button>
+            <button id="is-read" class="is-not-read">Not Read</button>
+          </div>
+        </div>
+      </div> -->
+    </section>
+
+    <div id="popup-form" class="popup-form">
+      <form class="popup">
+        <label for="title">Book Title:</label><br />
+        <input type="text" id="title" name="title" /><br />
+
+        <label for="author">Author:</label><br />
+        <input type="text" id="author" name="author" /><br />
+
+        <label for="pages">Page count:</label><br />
+        <input type="number" id="pages" name="pages" min="1" /><br />
+        <fieldset class="submit-buttons">
+          <button type="button" class="btn cancel" onclick="closeForm()">
+            Cancel
+          </button>
+          <button type="button" class="btn" onclick="submitForm()">
+            Submit
+          </button>
+        </fieldset>
+      </form>
+    </div>
+
+    <footer>
+      <p>
+        This site is a learning project by
+        <a href="https://twitter.com/saul_good_homie">Saul Belisle</a>, view the
+        code on
+        <a href="https://github.com/Saul-Good-Homie/JS-Library">Github</a>.
+      </p>
+    </footer>
+
+    <!-- javascript -->
+    <script src="javascript.js"></script>
+  </body>
+</html>
