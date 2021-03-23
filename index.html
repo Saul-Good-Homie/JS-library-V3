@@ -33,27 +33,20 @@
 			</div>
 		</header>
 
-		<section id="book-shelf">
-			<!-- <div class="book-card">
-        <div class="top-container">
-          <div class="book-title">The Hobbit</div>
-          <div class="book-author">By: JR Tolkein</div>
-        </div>
-        <div class="bottom-container">
-          <div class="book-pages">493 pages</div>
-          <div class="book-footer">
-            <button
-              id="delete-button"
-              class="delete-button"
-              onclick="deleteBook(event)"
-            >
-              Delete
-            </button>
-            <button id="is-read" class="is-not-read">Not Read</button>
-          </div>
-        </div>
-      </div> -->
-		</section>
+		<!-- Top Navigation Menu -->
+		<div id="mobile-nav" class="topnav">
+			<a href="#home" class="active">Book Library</a>
+			<!-- Navigation links (hidden by default) -->
+			<div id="myLinks">
+				<a href="#" onclick="openForm()">Add New Book</a>
+			</div>
+			<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+			<a href="javascript:void(0);" class="icon" onclick="mobileNavMenu()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+
+		<section id="book-shelf"></section>
 
 		<div id="popup-form" class="popup-form">
 			<form class="popup">

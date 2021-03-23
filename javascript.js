@@ -126,6 +126,7 @@ function clearForm() {
 // function to mark book as read
 function readBook(e) {
 	const bookID = e.target.parentNode.parentNode.parentNode.id;
+	const bookFrame = e.target.parentNode.parentNode.parentNode;
 
 	const book = myLibrary.find((novel) => novel.bookID == bookID);
 	if (book.read === false) {
@@ -133,12 +134,15 @@ function readBook(e) {
 		e.target.textContent = 'Book Read!';
 		e.target.classList.remove('is-not-read');
 		e.target.classList.add('is-read');
+		bookFrame.classList.add('read-border');
 	} else {
 		book.read = false;
 		e.target.textContent = 'Mark as read?';
 		e.target.classList.remove('is-read');
 		e.target.classList.add('is-not-read');
+		bookFrame.classList.remove('read-border');
 	}
+
 	saveLocal();
 }
 
@@ -169,6 +173,16 @@ function bindUI() {
 	newBook.addEventListener('click', openForm);
 	const submitButton = document.getElementById('submit-button');
 	submitButton.addEventListener('click', submitForm);
+}
+
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function mobileNavMenu() {
+	const x = document.getElementById('myLinks');
+	if (x.style.display === 'block') {
+		x.style.display = 'none';
+	} else {
+		x.style.display = 'block';
+	}
 }
 
 restoreLocal();

@@ -1,19 +1,19 @@
 /* CSS Reset */
 
 html {
-  box-sizing: border-box;
-  font-size: 16px;
-  font-family: "Arimo", sans-serif;
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: 'Arimo', sans-serif;
 }
 
 body {
-  background-color: #f1faee;
+	background-color: #f1faee;
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 body,
@@ -26,289 +26,364 @@ h6,
 p,
 ol,
 ul {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
 }
 
 ol,
 ul {
-  list-style: none;
+	list-style: none;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 a.hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 /* start of site specific styles */
 
 .hero {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 25vh;
-  border-bottom: 2px solid black;
-  padding-top: 20px;
-  padding-bottom: 3px;
-  background: #457b9d;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 25vh;
+	border-bottom: 2px solid black;
+	padding-top: 20px;
+	padding-bottom: 3px;
+	background: #457b9d;
 }
 
 h1 {
-  color: #f1faee;
-  font-size: 56px;
+	color: #f1faee;
+	font-size: 56px;
 }
 
 .add-new {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  width: 90%;
-  align-items: end;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	width: 90%;
+	align-items: end;
 }
 
 .new-book {
-  background-color: #e63946;
-  border-radius: 28px;
-  border: 1px solid #e63946;
-  /* display: inline-block; */
-  cursor: pointer;
-  color: #f1faee;
-  font-size: 17px;
-  padding: 16px 31px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px rgb(240, 46, 62);
+	background-color: #e63946;
+	border-radius: 28px;
+	border: 1px solid #e63946;
+	/* display: inline-block; */
+	cursor: pointer;
+	color: #f1faee;
+	font-size: 17px;
+	padding: 16px 31px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px rgb(240, 46, 62);
 }
 .new-book:hover {
-  background-color: rgb(240, 72, 86);
+	background-color: rgb(240, 72, 86);
 }
 .new-book:active {
-  position: relative;
-  top: 1px;
+	position: relative;
+	top: 1px;
+}
+
+.newbook:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
 }
 
 /* start of book area */
 
 #book-shelf {
-  background-color: #f1faee;
-  min-height: 75vh;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 5px;
+	background-color: #f1faee;
+	min-height: 75vh;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 5px;
 }
 
 .book-card {
-  border: 3px solid #a8dadc;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 1;
-  max-width: 200px;
-  min-width: 200px;
-  max-height: 300px;
-  min-height: 300px;
-  padding: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 5px;
-  background-color: #1d3557;
+	border: 3px solid #a8dadc;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-grow: 1;
+	max-width: 200px;
+	min-width: 200px;
+	max-height: 300px;
+	min-height: 300px;
+	padding: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	background-color: #1d3557;
+}
+
+.read-border {
+	border: 5px solid green;
 }
 
 .top-container {
-  background-color: #457b9d;
-  padding-top: 10px;
-  margin-top: 25%;
-  padding-bottom: 3px;
+	background-color: #457b9d;
+	padding-top: 10px;
+	margin-top: 25%;
+	padding-bottom: 3px;
 }
 
 .bottom-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin-bottom: 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-bottom: 10%;
 }
 
 .book-title,
 .book-author,
 .book-pages,
 .book-read {
-  text-align: center;
-  margin: auto;
-  color: #f1faee;
+	text-align: center;
+	margin: auto;
+	color: #f1faee;
 }
 
 .book-title {
-  flex-grow: 1.5;
-  font-size: 24px;
+	flex-grow: 1.5;
+	font-size: 24px;
 }
 
 .book-author {
-  font-size: 16px;
+	font-size: 16px;
 }
 
 .book-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
 .delete-button {
-  color: #f1faee;
-  font-size: 12px;
-  background-color: #e63946;
-  border-radius: 28px;
-  border: 1px solid #e63946;
-  display: inline-block;
-  cursor: pointer;
-  color: #f1faee;
-  padding: 2px 4px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px rgb(240, 46, 62);
-  margin-right: 4px;
+	color: #f1faee;
+	font-size: 12px;
+	background-color: #e63946;
+	border-radius: 28px;
+	border: 1px solid #e63946;
+	display: inline-block;
+	cursor: pointer;
+	color: #f1faee;
+	padding: 2px 4px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px rgb(240, 46, 62);
+	margin-right: 4px;
 }
 
 .delete-button:hover {
-  background-color: rgb(240, 72, 86);
+	background-color: rgb(240, 72, 86);
 }
 
 .is-read {
-  color: #f1faee;
-  font-size: 12px;
-  background-color: green;
-  border-radius: 28px;
-  border: 1px solid darkgreen;
-  display: inline-block;
-  cursor: pointer;
-  padding: 2px 4px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px rgb(29, 173, 29);
+	color: #f1faee;
+	font-size: 12px;
+	background-color: green;
+	border-radius: 28px;
+	border: 1px solid darkgreen;
+	display: inline-block;
+	cursor: pointer;
+	padding: 2px 4px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px rgb(29, 173, 29);
 }
 
 .is-read:hover {
-  background-color: rgb(38, 165, 22);
+	background-color: rgb(38, 165, 22);
 }
 
 .is-not-read {
-  color: green;
-  font-size: 12px;
-  background-color: #f1faee;
-  border-radius: 28px;
-  border: 1px solid darkgreen;
-  display: inline-block;
-  cursor: pointer;
-  padding: 2px 4px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px rgb(29, 173, 29);
+	color: green;
+	font-size: 12px;
+	background-color: #f1faee;
+	border-radius: 28px;
+	border: 1px solid darkgreen;
+	display: inline-block;
+	cursor: pointer;
+	padding: 2px 4px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px rgb(29, 173, 29);
 }
 
 .is-not-read:hover {
-  background-color: #cfd6cd;
+	background-color: #cfd6cd;
 }
 
 /* Popup Form section */
 
 .popup-form {
-  border: 1px solid black;
-  border-radius: 10px;
-  background-color: #a8dadc;
-  padding: 1%;
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 40%;
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: #a8dadc;
+	padding: 1%;
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 40%;
 }
 
 fieldset {
-  border: 0;
+	border: 0;
 }
 .submit-buttons {
-  display: flex;
+	display: flex;
 }
 
 /* Full-width input fields */
-.popup input[type="text"],
-.popup input[type="number"] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
+.popup input[type='text'],
+.popup input[type='number'] {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border: none;
+	background: #f1f1f1;
 }
 
 /* When the inputs get focus, do something */
-.popup input[type="text"]:focus,
-.popup input[type="number"]:focus {
-  background-color: #ddd;
-  outline: none;
+.popup input[type='text']:focus,
+.popup input[type='number']:focus {
+	background-color: #ddd;
+	outline: none;
 }
 
 /* Set a style for the submit/login button */
 .popup .btn {
-  background-color: #4caf50;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom: 10px;
-  opacity: 0.8;
+	background-color: #4caf50;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	margin-bottom: 10px;
+	opacity: 0.8;
 }
 
 /* Add a red background color to the cancel button */
 .popup .cancel {
-  background-color: #e63946;
+	background-color: #e63946;
 }
 
 /* Add some hover effects to buttons */
 .popup .btn:hover,
 .open-button:hover {
-  opacity: 1;
+	opacity: 1;
 }
 /* footer section */
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  padding-bottom: 3px;
-  width: 100%;
-  text-align: center;
-  background-color: #f1faee;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	padding-bottom: 3px;
+	width: 100%;
+	text-align: center;
+	background-color: #f1faee;
 }
 
 footer a:link {
-  /* color: white;
+	/* color: white;
   background-color: #e63946; */
-  background-color: #e63946;
-  border-radius: 28px;
-  border: 1px solid #e63946;
-  display: inline-block;
-  cursor: pointer;
-  color: #f1faee;
-  /* font-size: 17px; */
-  padding: 2px 8px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px rgb(240, 46, 62);
+	background-color: #e63946;
+	border-radius: 28px;
+	border: 1px solid #e63946;
+	display: inline-block;
+	cursor: pointer;
+	color: #f1faee;
+	/* font-size: 17px; */
+	padding: 2px 8px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px rgb(240, 46, 62);
 }
 
 footer a:visited {
-  text-decoration: none;
-  color: #f1faee;
+	text-decoration: none;
+	color: #f1faee;
 }
 
 /* mouse over link */
 footer a:hover {
-  background-color: rgb(240, 72, 86);
+	background-color: rgb(240, 72, 86);
+}
+
+#mobile-nav {
+	display: none;
+}
+
+/* mobile styles */
+@media only screen and (max-width: 600px) {
+	footer {
+		display: none;
+	}
+	/* Mobile Nav Bar section */
+	/* Style the navigation menu */
+	#mobile-nav {
+		display: block;
+	}
+
+	.topnav {
+		overflow: hidden;
+		background-color: #333;
+		position: relative;
+	}
+
+	/* Hide the links inside the navigation menu (except for logo/home) */
+	.topnav #myLinks {
+		display: none;
+	}
+
+	/* Style navigation menu links */
+	.topnav a {
+		color: white;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+		display: block;
+	}
+
+	/* Style the hamburger menu */
+	.topnav a.icon {
+		/* background: black; */
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	/* Add a grey background color on mouse-over */
+	.topnav a:hover {
+		background-color: #ddd;
+		color: black;
+	}
+
+	/* Style the active link (or home/logo) */
+	.active {
+		background-color: #457b9d;
+		color: white;
+	}
+
+	.hero {
+		display: none;
+	}
+
+	.popup-form {
+		width: 80%;
+	}
 }
