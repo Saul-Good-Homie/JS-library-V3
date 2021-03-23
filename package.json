@@ -1,0 +1,25 @@
+{
+  "name": "JS-library-V3",
+  "description": "In this project, I am refactoring an existing project. The original project was a simple book library that allows users to enter Book objects with the properties of: Title, Author, Page count and read/not read. The purpose of this new project is to install ES Lint, and practice using javascript/CSS classes to toggle a responsive menu and play with animation.",
+  "version": "1.0.0",
+  "main": "javascript.js",
+  "devDependencies": {
+    "eslint": "^7.22.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saul-Good-Homie/JS-library-V3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saul-Good-Homie/JS-library-V3/issues"
+  },
+  "homepage": "https://github.com/Saul-Good-Homie/JS-library-V3#readme"
+}
